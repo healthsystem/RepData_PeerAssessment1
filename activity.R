@@ -5,7 +5,6 @@ activity_raw <- read.csv("./reproducible_research/RepData_PeerAssessment1/activi
 activity_raw$date <- as.Date(activity_raw$date, format = "%Y-%m-%d")
 activity <- activity_raw
 
-#
 activity_clean <- activity[complete.cases(activity),]
 activity_clean$date <- as.Date(activity_clean$date, format = "%Y-%m-%d")
 
